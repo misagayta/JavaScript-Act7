@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Desarrollo web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  </head>
+  <body onload="Cajas();" style="background:#C267FF; font-family: 'Sriracha', cursive;">
+
+    <script type="text/javascript">
+      function Cajas (){
+        var n=prompt("Ingrese la cantidad deseada de cajas a insertar");
+           if (n<=8) {
+             var i=1;
+             while (i<=n) {
+               document.write('<article id="caja" style="background-color: #10375c; color:#f3c623;width:70px; height:50px; float:left;margin-left:15px; margin-top:15px;" align="center">Caja'+i+'</article>');
+               i++;
+             }
+           }else {
+             var j=1;
+             while (j<=n) {
+               document.write('<article id="caja" style="background-color:#f3c623; color:#10375c; margin-top:15px;" align="center">Caja'+i+'</article>');
+               j++;
+             }
+           }
+        }
+    </script>
+  </body>
+</html>

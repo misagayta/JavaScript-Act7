@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  </head>
+  <body style="background:#C267FF; font-family: 'Sriracha', cursive;">
+    <section>
+      <form name="frmSeleccion" align="center" style="margin-top:100px;">
+        <label>Seleccione su region actual:</label>
+        <select name="zona">
+          <option value="Norte">Norte</option>
+          <option value="Sur">Sur</option>
+          <option value="Centro">Centro</option>
+        </select>
+          <input type="button" onclick="votar();" value="Votar">
+      </form>
+
+    <article align="center" style="margin-top:10px;">    </article>
+
+
+        <script type="text/javascript">
+
+        var nombre=prompt("Buen dia, Por favor ingrese su nombre.")
+          var select = document.querySelector('select');
+          var para = document.querySelector('article');
+          function votar(){
+            var region = select.value;
+            switch (region) {
+              case 'Norte':
+                   para.textContent = nombre+' Usted ha emitido su voto en la zona: '+region;
+                break;
+              case 'Sur':
+                    para.textContent = nombre+' Usted ha emitido su voto en la zona: '+region;
+                break;
+              case 'Centro':
+                    para.textContent = nombre+' Usted ha emitido su voto en la zona: '+region;
+                break;
+              }
+          }
+        </script>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Factorial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  </head>
+  <body style="background:#61337F;font-family: 'Sriracha', cursive;">
+    <div align="center" style="widht:200px; height:200px; margin-top:100px;">
+      <h1>Calcular Factorial</h1>
+      <button type="button" onclick="Calcular();">Calcular</button>
+      <label id="textRes"></label>
+    </div>
+
+   <script type="text/javascript">
+
+     function  Calcular(){
+       var num =prompt('Ingrese un numero:');
+       var resultado=1;
+       for (var i = 1; i<=num; i++){
+         resultado=resultado*i;
+       }
+       alert("El factorial es: "+resultado);
+     }
+
+     </script>
+
+  </body>
+</html>

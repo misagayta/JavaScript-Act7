@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  </head>
+  <body style="background:#A41AFF;font-family: 'Sriracha', cursive;">
+    <h3 align="center">Seleccione alguna operacion a realizar</h3>
+    <img src="IMG/calculadora.png" style:"width:3px; height:7px; align=center">
+
+
+    <article class="Calculadora" align="center" style="margin-top:50px;opacity: 0.5;background-color:black;border-radius: 25px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: solid  white;">
+
+      <input type="button" value="Sumar" onclick="Sumar();">
+      <input type="button" value="Restar" onclick="Restar();">
+      <input type="button" value="Dividir" onclick="Dividir();">
+      <input type="button" value="Multiplicar" onclick="Multiplicar();">
+      <input type="button" value="Modular" onclick="Modular();">
+    </article>
+    <script type="text/javascript">
+      var x=prompt("Ingrese el primer numero  calcular:");
+      var y=prompt("Ingrese el segundo a calcular:");
+
+        function Sumar(){
+          resultado=x+y;
+          alert("El resultado de:"+x+"+"+y+"="+resultado);
+        }
+        function Restar(){
+            resultado=x-y;
+            alert("El resultado de:"+x+"-"+y+"="+resultado);
+
+        }
+        function Dividir(){
+            resultado=x/y;
+            alert("El resultado de:"+x+"/"+y+"="+resultado);
+
+        }
+        function Multiplicar(){
+            resultado=x*y;
+            alert("El resultado de:"+x+"*"+y+"="+resultado);
+
+        }
+        function Modular(){
+            resultado=x%y;
+            alert("El resultado de:"+x+"%"+y+"="+resultado);
+        }
+
+    </script>
+
+  </body>
+</html>
