@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imagenes y Dom</title>
+</head>
+<body style="text-align: center;">
+	<figure>
+		<img src="img/flor.jpg" id="imag" style="border: 20px solid purple;" width="300" height="400">
+	</figure>
+	<form name="formu">
+
+
+		<label style="margin: 20px;">Escoge tu color de borde</label><input type="color" id="colors" name="colorB" onclick="Cambiarcolor()"><br><br>
+
+		<p><strong>Nota: </strong>Para notar los cambios hechos es necesario cambiar el grueso del borde</p>
+		<h3>Seleccione un tipo de borde:</h3>
+		<input type="button" value="Borde punteado" onclick="bordePuntos()" style="margin: 20px; border-radius:10px;">
+		<input type="button" value="Borde lineado" onclick="bordeLineas()" style="margin: 20px; border-radius:10px;">
+		<input type="button" value="Borde doble" onclick="bordeDoble()" style="margin: 20px; border-radius:10px;">
+
+		<h3>Seleccione el grueso del borde:</h3>
+		<input type="button" value="10px de ancho de borde" onclick="setBorderWidth(10);">
+		<input type="button" value="20px de ancho de borde" onclick="setBorderWidth(20);"><br><br>
+
+	</form>
+	<script type="text/javascript">
+		function setBorderWidth(x){
+			document.getElementById("imag").style.borderWidth=x+"px";
+
+
+		}
+		function Cambiarcolor(imag){
+			let color = document.getElementById("colors").value;
+			document.getElementById("imag").style.borderColor= color;
+		}
+		function bordePuntos(){
+			document.getElementById("imag").style.border = "thin dotted";
+
+		}
+		function bordeLineas(){
+			document.getElementById("imag").style.border = "thin dashed";
+		}
+		function bordeDoble(){
+			document.getElementById("imag").style.border = "thin double";
+
+		}
+
+	</script>
+
+</body>
+</html>

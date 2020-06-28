@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elementos enlistados</title>
+</head>
+<body style="background: rgba(142,46,122,1);
+background: -moz-linear-gradient(left, rgba(142,46,122,1) 0%, rgba(97,21,78,1) 25%, rgba(93,14,70,1) 68%, rgba(147,26,107,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(142,46,122,1)), color-stop(25%, rgba(97,21,78,1)), color-stop(68%, rgba(93,14,70,1)), color-stop(100%, rgba(147,26,107,1)));
+background: -webkit-linear-gradient(left, rgba(142,46,122,1) 0%, rgba(97,21,78,1) 25%, rgba(93,14,70,1) 68%, rgba(147,26,107,1) 100%);
+background: -o-linear-gradient(left, rgba(142,46,122,1) 0%, rgba(97,21,78,1) 25%, rgba(93,14,70,1) 68%, rgba(147,26,107,1) 100%);
+background: -ms-linear-gradient(left, rgba(142,46,122,1) 0%, rgba(97,21,78,1) 25%, rgba(93,14,70,1) 68%, rgba(147,26,107,1) 100%);
+background: linear-gradient(to right, rgba(142,46,122,1) 0%, rgba(97,21,78,1) 25%, rgba(93,14,70,1) 68%, rgba(147,26,107,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e2e7a', endColorstr='#931a6b', GradientType=1 );">
+	<header id="encabezado">
+    
+		<section align="center" style="margin-top: 50px;
+    margin-left: 360px;
+    background-color:black;
+    width: 50%;
+    height: 80%;
+    opacity: 0.5;
+    text-align: center;
+    color:white;
+    border-radius: 25px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: solid  white;">
+      <ol id="lista">
+  			<li>Opcion 1</li>
+  			<li>Opcion 2</li>
+  			<li>Opcion 3</li>
+  		</ol>
+  		<button type="button" onclick="agregar();">Agregar opcion</button>
+    </section>
+	</header>
+
+	<script type="text/javascript">
+		function agregar(){
+			var elemento= document.createElement("li");
+			var texto= document.createTextNode("Opcion 4");
+			elemento.appendChild(texto);
+			var lista=document.getElementById("lista");
+			lista.appendChild(elemento);
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjetas</title>
+    <!-- FONTS  -->
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+
+  </head>
+  <body style="background: rgba(200,195,239,1);
+                        background: -moz-linear-gradient(left, rgba(200,195,239,1) 0%, rgba(185,171,226,0.97) 30%, rgba(175,164,224,0.94) 62%, rgba(158,154,223,0.9) 100%);
+                        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(200,195,239,1)), color-stop(30%, rgba(185,171,226,0.97)), color-stop(62%, rgba(175,164,224,0.94)), color-stop(100%, rgba(158,154,223,0.9)));
+                        background: -webkit-linear-gradient(left, rgba(200,195,239,1) 0%, rgba(185,171,226,0.97) 30%, rgba(175,164,224,0.94) 62%, rgba(158,154,223,0.9) 100%);
+                        background: -o-linear-gradient(left, rgba(200,195,239,1) 0%, rgba(185,171,226,0.97) 30%, rgba(175,164,224,0.94) 62%, rgba(158,154,223,0.9) 100%);
+                        background: -ms-linear-gradient(left, rgba(200,195,239,1) 0%, rgba(185,171,226,0.97) 30%, rgba(175,164,224,0.94) 62%, rgba(158,154,223,0.9) 100%);
+                        background: linear-gradient(to right, rgba(200,195,239,1) 0%, rgba(185,171,226,0.97) 30%, rgba(175,164,224,0.94) 62%, rgba(158,154,223,0.9) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c3ef', endColorstr='#9e9adf', GradientType=1 );">
+
+
+
+
+<!-- --------------------------------------------------------------------------------------------------------------  -->
+  <section align="center" style="margin-top: 50px;margin-left: 360px; background-color:black; width: 50%; height: 80%; opacity: 0.5;  text-align: center; color:white;  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);  border: solid  white;">
+                   <h1>Personaliza tu propia tarjeta</h1>
+              <div class="selecciones">
+                <h3><img src="IMG/mas.png" width="20" height="20"> Elige el tema</h3>
+                <input type="radio" id="from1" name="tarjeta" value="Valentin" onclick="Cam1();">
+                <label for="target1">San Valentin</label>
+
+                <input type="radio" id="from2" name="tarjeta" value="Cumple" onclick="Cam2();">
+                <label for="target2">Cumpleaños</label>
+
+                <input type="radio" id="from3" name="tarjeta" value="Motivation" onclick="Cam3();">
+                <label for="target3">Motivación</label>
+              </div>
+<!-- --------------------------------------------------------------------------------------------------------------  -->
+              <div class="imagenes">
+                <h3><img src="IMG/foto.png" width="20" height="30">   Elige la imagen</h3>
+
+                 <img  width="200" height="100vh" id="img1" name="primera" onclick="tomar('primera');">
+
+                  <img  width="200" height="100vh" id="img2" name="segunda" onclick="tomar('segunda');">
+
+                 <img  width="200" height="100vh" id="img3" name="tercera" onclick="tomar('tercera');">
+                   <br>
+
+                 <img  width="200" height="100vh" id="img4" name="cuarta" onclick="tomar('cuarta');">
+
+                   <img  width="200" height="100vh" id="img5" name="quinta" onclick="tomar('quinta');">
+
+                 <img  width="200" height="100vh" id="img6" name="sexta" onclick="tomar('sexta');">
+                   <br>
+
+                 <img  width="200" height="100vh" id="img7" name="septima" onclick="tomar('septima');">
+
+                   <img  width="200" height="100vh" id="img8" name="octava" onclick="tomar('octava');">
+
+                 <img  width="200" height="100vh" id="img9" name="novena" onclick="tomar('novena');">
+                   <br>
+                  <img  width="200" height="100vh" id="img10" name="decima" onclick="tomar('decima');">
+
+
+              </div>
+<!-- --------------------------------------------------------------------------------------------------------------  -->
+              <div class="t" style="margin-top:25px;">
+                <h3><img src="IMG/editar.png" width="20" height="20">   Llena los siguientes campos:</h3>
+              <input type="text" name="Title" placeholder="Titulo" id="Titulo" onchange="document.getElementById('textT').innerHTML = Titulo = this.value"><br><br>
+              <input type="text" name="Subtitle" placeholder="Subtema" id="Subtema" onchange="document.getElementById('textS').innerHTML = Subtema = this.value"><br><br>
+              <input type="text" name="Name" placeholder="Nombre del remitente" id="Nombre" onchange="document.getElementById('textN').innerHTML = Nombre= this.value"><br><br>
+
+              <input type="text" name="Message" placeholder="Mensaje" align="right"  style="border-radius: 5px;
+              border: 1px solid #39c; color:black; width: 50%;height: auto;
+              padding: 10px; margin-top:30px;" id="Mens" onchange="document.getElementById('textM').innerHTML = Mens = this.value"><br><br>
+              </div>
+              <br>
+               <div   style="border-radius: 30px; border: solid; width:70%; height:50%; margin-left:15%;">
+                 <p><strong>NOTA: </strong>Para elegir el color realizar los siguientes pasos.</p>
+                 <h5>1.-Presione la casilla </h5>
+                 <h5>2.- Seleccione el color</h5>
+                 <h5>3.- Presione nuevamente el botón para aplicar el color</h5>
+                 <h5>4.- Disfrute de la experiencia.</h5>
+
+               </div>
+              <label style="margin: 20px;"><img src="IMG/pintar.png" width="50" height="50">  Color de fondo:</label><input type="color" id="colors" name="colorB" onclick="ColorFondo()"><br><br>
+                   <br>
+              <label for="muestrario"><img src="IMG/disenador.png" width="50" height="50"> Color de fuente:</label>
+              <input type="color" value="#ff0000" id="muestrario">
+               <br><br>
+
+            
+
+              <h3>Seleccione el tamaño fuente:</h3>
+              <input type="button" value="5" onclick="setFontSize(5);">
+              <input type="button" value="10" onclick="setFontSize(10);">
+              <input type="button" value="15" onclick="setFontSize(15);">
+              <input type="button" value="20" onclick="setFontSize(20);">
+              <input type="button" value="25" onclick="setFontSize(25);">
+
+              <h3>Seleccione el grueso del borde de su tarjeta:</h3>
+              <input type="button" value="5" onclick="setBorderWidth(5);">
+              <input type="button" value="10" onclick="setBorderWidth(10);">
+              <input type="button" value="15" onclick="setBorderWidth(15);">
+              <input type="button" value="20" onclick="setBorderWidth(20);">
+              <input type="button" value="25" onclick="setBorderWidth(25);">
+
+
+
+              <br><br><br>
+              <input type="button" value="Imprimir" onclick="Imprimir();" style="margin: 20px;"></input>
+              <br><br>
+      </section>
+<!-- --------------------------------------------------------------------------------------------------------------  -->
+      <section id="target" class="tarjetImprent" align="center" style=" display: none ; float: left; margin-top: 50px; margin-left: 360px; background-color:black; width: 50%; height: 80%; opacity: 0.5; text-align: center; color:white; border-radius: 25px;
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); border: solid  white;">
+      		<div id="imprent">
+      			<h1 id="textT" class="titulo"></h1>
+      			<h3 id="textS" class="titulo"></h3>
+      			<center><img src="img/IMG.jpg" class="fotoT" id="print"></div></center>
+      			<div class="mensajeS"><p id="textM"></p></div>
+      		</div>
+
+          <p id="author" align="right" style="margin-right:8px; float:right;"></p><br>
+		      <p id="fecha" align="left" style="margin-left:8px;"></p>
+
+
+
+
+          <audio src="mp/TQ.mp3" controls="controls"></audio>
+
+      </section>
+<!-- --------------------------------------------------------------------------------------------------------------  -->
+<!-- --------------------------------------------------------------------------------------------------------------  -->
+<!-- --------------------------------------------------------------------------------------------------------------  -->
+    <script type="text/javascript">
+    //author-----------------------------------------------------------------
+    var autor =prompt("Ingrese su nombre");
+    document.getElementById('author').innerHTML="Autor: "+autor;
+    // tarjeta-----------------------------------------------------------------
+          var titulo;
+          var subtitulo;
+          var autor;
+          var texto;
+          // imagenes------------------------------------------------
+          function Cam1(){
+          document.getElementById("img1").src="IMG/valen1.png";
+          document.getElementById("img2").src="IMG/valen2.png";
+          document.getElementById("img3").src="IMG/valen3.png";
+          document.getElementById("img4").src="IMG/valen4.png";
+          document.getElementById("img5").src="IMG/valen5.png";
+          document.getElementById("img6").src="IMG/valen6.png";
+          }
+          function Cam2(){
+            document.getElementById("img1").src="IMG/cumple1.png";
+            document.getElementById("img2").src="IMG/cumple2.png";
+            document.getElementById("img3").src="IMG/cumple3.png";
+            document.getElementById("img4").src="IMG/cumple4.png";
+            document.getElementById("img5").src="IMG/cumple5.png";
+            document.getElementById("img6").src="IMG/cumple6.png";
+          }
+          function Cam3(){
+            document.getElementById("img1").src="IMG/mot1.png";
+            document.getElementById("img2").src="IMG/mot2.png";
+            document.getElementById("img3").src="IMG/mot3.png";
+            document.getElementById("img4").src="IMG/mot4.png";
+            document.getElementById("img5").src="IMG/mot5.png";
+            document.getElementById("img6").src="IMG/mot6.png";
+            document.getElementById("img7").src="IMG/mot7.png";
+            document.getElementById("img8").src="IMG/mot8.png";
+            document.getElementById("img9").src="IMG/mot9.png";
+            document.getElementById("img10").src="IMG/mot10.png";
+          }
+          function Imprimir(){
+          document.getElementById("target").style.display="block";
+          }
+
+          function tomar(num) {
+           imagen = document.images[num].src
+           grande = document.images["print"]
+           grande.src = imagen
+           }
+
+          // colorFondo-----------------------------------------------------
+          function ColorFondo(target){
+          			let color = document.getElementById("colors").value;
+          			document.getElementById("target").style.backgroundColor= color;
+          		}
+
+
+
+          //borde---------------------------------------------------------
+          function setBorderWidth(x){
+      			document.getElementById("target").style.borderWidth=x+"px";
+      		}
+
+          // fuente---------------------------------------------------------
+         function setFontFamily(){
+           document.getElementById('textT').style.fontFamily='Notable', sans-serif;
+         }
+         function setFontSize (x){
+           	document.getElementById("textT").style.fontSize=x+"px";
+            document.getElementById("textS").style.fontSize=x+"px";
+            document.getElementById("textM").style.fontSize=x+"px";
+            document.getElementById("textN").style.fontSize=x+"px";
+
+         }
+
+         // colorFuente-----------------------------------
+         var muestrario;
+         var colorPredeterminado = "#0000ff";
+         window.addEventListener("load", startup, false);
+
+         function startup() {
+               muestrario = document.querySelector("#muestrario");
+               muestrario.value = colorPredeterminado;
+               muestrario.addEventListener("input", actualizarPrimero, false);
+               muestrario.addEventListener("change", actualizarTodo, false);
+               muestrario.select();
+               function actualizarPrimero(event) {
+                     var p = document.querySelector("p");
+
+                     if (p) {
+                       p.style.color = event.target.value;
+                     }
+                   }
+                   function actualizarTodo(event) {
+                         document.querySelectorAll("p").forEach(function(p) {
+                           p.style.color = event.target.value;
+                         });
+                       }
+              }
+
+
+          // fecha------------------------------------------------------------
+          var meses=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+          var dias= new Array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado");
+          var f= new Date();
+          	document.getElementById('fecha').innerHTML=+f.getDate()+"/"+ meses[f.getMonth()]+"/"+f.getFullYear();
+
+
+    </script>
+
+  </body>
+</html>
